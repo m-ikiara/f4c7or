@@ -6,6 +6,6 @@
 #include <stdio.h>
 #include <stdlib.h>
 
-void factor(void);
+int *factor(int number);
 
 #endif // !_FACTOR_H_

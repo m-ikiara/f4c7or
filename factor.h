@@ -6,6 +6,11 @@
 #include <stdio.h>
 #include <stdlib.h>
 
-int *factor(int number);
+typedef struct Factor_s {
+    int dividend;
+    int divisor;
+} Factors;
+
+Factors factor(int number);
 
 #endif // !_FACTOR_H_

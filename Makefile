@@ -1,6 +1,5 @@
 CC := gcc
-CXX := g++
-CFLAGS := -g -O3 -Wall -Wextra -pedantic -mwindows
+CFLAGS := -ggdb -O3 -Wall -Wextra -pedantic -std=c11
 SRC := $(wildcard *.c)
 OBJ := $(SRC:.c=.o)
 NAME := f4c7or
@@ -10,11 +9,11 @@ NAME := f4c7or
 all: target
 
 target: $(OBJ)
-	$(CC) $(CFlAGS) -o $(NAME) $(OBJ)
+	$(CC) $(CFLAGS) -o $(NAME) $(OBJ)
 
 %.o: %.c
-	$(CXX) $(CFlAGS) -c $< -o $@
+	$(CC) $(CFLAGS) -c $< -o $@
 
 clean:
-	rm target
+	rm $(NAME) 
 	rm $(OBJ)

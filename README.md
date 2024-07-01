@@ -5,13 +5,21 @@
 
 ## Getting Started
 
-Just follow the simple steps and Enjoy!
+1. Clone the repo and navigate to the directory.
 
 ```console
 $ git clone https://github.com/m-ikiara/f4c7or.git
 $ cd f4c7or
+```
+2. Build the RSA Challenge binary.
+
+```console
 $ make
-$ ./factor <ARGS>
+```
+3. Define your tests in `/tests` and then run the program while passing in the file path as an argument to the binary.
+
+```console
+$ ./factor tests/<test>
 ```
 
 ## Licensing

@@ -1,6 +1,8 @@
 <div align="center">
     <h1>f4c7or</h1>
-    <strong>RSA Factoring Challenge</strong>
+    <img
+        alt="Repo Size"
+        src="https://img.shields.io/github/repo-size/m-ikiara/f4c7or?style=plastic&logo=c&color=red"/>
 </div>
 
 ## Getting Started
